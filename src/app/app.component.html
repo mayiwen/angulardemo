@@ -5,19 +5,11 @@
       <div [formGroupName]="i">
         <input type="text"  formControlName="name">
         <input type="text"  formControlName="age">
+        
+        <button (click)="itemtt(item)">你好</button> 
+         {{item.value.array | json}}
       </div>
     </div>
   </div>
 </div>
 <button (click)="add()">获取数据</button> 
-<!-- <div [formArray]="arrayForm">
-
-</div> -->
-<!-- <div [formGroup]="arrayForm">
-  <div *ngFor="let item of array.controls; let i=index">
-    <div [formGroupName]="i">
-      <input type="text"  formControlName="name">
-      <input type="text"  formControlName="age">
-    </div>
-  </div>
-</div> -->
