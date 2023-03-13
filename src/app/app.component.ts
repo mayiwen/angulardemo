@@ -12,11 +12,8 @@ export class AppComponent {
     array: this.fb.array([
       this.fb.group({
         name: 'zs',
-        age: '15'
-      }),
-      this.fb.group({
-        name: 'ws',
-        age: '18'
+        age: '15',
+        array: this.fb.array([])
       }),
     ]),
   })
@@ -27,7 +24,8 @@ export class AppComponent {
     }),
     this.fb.group({
       name: 'ws',
-      age: '18'
+      age: '18',
+      array: this.fb.array([])
     }),
   ])
   get array() {
